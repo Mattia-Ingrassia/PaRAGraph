@@ -1,0 +1,51 @@
+body{
+    overflow-y: hidden;
+    margin-top: 0;
+}
+
+/* Make the columns sticky */
+.stColumn:nth-child(1) > div {
+    top: 0 !important;
+    height: 70vh !important;
+    overflow-y: auto !important;
+    padding-top: 1rem !important;
+    display: flex !important;
+}
+
+.stColumn:nth-child(2) > div {
+    position: sticky !important;
+    top: 0 !important;
+    height: 70vh !important;
+    overflow-y: auto !important;
+    padding-top: 1rem !important;
+}
+
+/* Style the sticky documents section */
+.sticky-documents {
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 30px;
+    border: 1px solid #e0e0e0;
+}
+
+.sticky-documents h3 {
+    margin-top: 0;
+}
+
+.sticky-documents a {
+    display: block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+}
+
+.document-link{
+    color: #1f77b4; 
+    text-decoration: none; 
+    font-size: 0.8rem;
+}
+
+
+div[data-testid="stButton"] > button {
+    text-align: left !important;
+    justify-content: flex-start !important;
+}
